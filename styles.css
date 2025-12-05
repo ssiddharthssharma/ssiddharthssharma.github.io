@@ -395,6 +395,12 @@ p {
   margin-bottom: 6px;
 }
 
+.contact-card p,
+.contact-card a {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
 /* Footer */
 
 .site-footer {
