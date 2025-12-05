@@ -1,24 +1,386 @@
 <!DOCTYPE html>
-<html>
-  
-<head> <title> Siddharth Sharma </title> </head>
-  <body>
-    <nav>
-    	<ul>
-        	<li><a href="/">Home</a></li>
-        	<li><a href="/experience">experience</a></li>
-        	<li><a href="/blog">Blog</a></li>
-    	</ul>
-    </nav>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Siddharth Sharma | Security Engineer & Threat Hunter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+        content="Siddharth Sharma - Security Engineer, Cyber Threat Hunter, Detection Engineering, Network & Cloud Security." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">S</span>
+        <span class="logo-text">Siddharth Sharma</span>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+      <nav class="nav" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <footer>
-    	<ul>
-        	<li><a href="mailto:ssiddharthssharma@gmail.com">email</a></li>
-        	<li><a href="https://github.com/ssiddharthssharma">github</a></li>
-	</ul>
-    </footer>	
-	
-</body>  
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-content">
+        <div>
+          <p class="hero-kicker">Security Engineer · Threat Hunter</p>
+          <h1>Siddharth Sharma</h1>
+          <p class="hero-subtitle">
+            Security Engineer focused on threat hunting, detection engineering,
+            and large-scale network & cloud defense across on-prem, hybrid, and
+            financial trading environments.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Contact</a>
+            <a href="resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener">
+              Download Resume
+            </a>
+          </div>
+          <div class="hero-meta">
+            <span>📍 Dehradun, India</span>
+            <span>✉️ <a href="mailto:siddharth.sharma.011235@gmail.com">Email</a></span>
+            <span>🔗 <a href="https://www.linkedin.com/in/Siddharth--Sharma" target="_blank" rel="noopener">LinkedIn</a></span>
+            <span>💻 <a href="https://github.com/ssiddharthssharma" target="_blank" rel="noopener">GitHub</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I’m a Security Engineer and Cyber Threat Hunter with experience
+          building and operating defenses for trading firms, large retailers,
+          and government environments. My work spans detection engineering,
+          threat hunting, network segmentation, cloud security, and SOC
+          automation.
+        </p>
+        <p>
+          I enjoy stitching together endpoint, network, and cloud telemetry to
+          uncover attacker behavior, reduce false positives, and ship practical
+          detections mapped to frameworks like MITRE ATT&amp;CK. I’m comfortable
+          moving across hands-on engineering, incident response, and working
+          directly with stakeholders and law enforcement partners.
+        </p>
+      </div>
+    </section>
 
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+
+        <article class="card">
+          <header class="card-header">
+            <div>
+              <h3>Cyber Threat Hunter</h3>
+              <p class="card-subtitle">CDOT (Centre for Development of Telematics) · New Delhi, India</p>
+            </div>
+            <span class="pill">Jun 2025 – Present</span>
+          </header>
+          <ul class="card-list">
+            <li>Automated North–South traffic analysis across OpenSearch and firewall logs, processing millions of records weekly and reducing reporting time from 7 days to a few hours.</li>
+            <li>Updated 50+ Sysmon and network detections mapped to MITRE ATT&amp;CK, cutting false positives from 400K/day to ~10K/day through behavior-based tuning.</li>
+            <li>Investigated high-risk malware, correlating endpoint, firewall, and CTI data to uncover coordinated campaigns and ship IOC reports for SOC triage.</li>
+            <li>Built automated health checks for production data pipelines to catch ingestion failures and dashboard degradation early.</li>
+            <li>Produced weekly intelligence reports consumed by cross-functional and law enforcement stakeholders.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <header class="card-header">
+            <div>
+              <h3>Security Engineer</h3>
+              <p class="card-subtitle">Flow Traders · New York</p>
+            </div>
+            <span class="pill">Jan 2023 – Dec 2023</span>
+          </header>
+          <ul class="card-list">
+            <li>Redesigned the New York office network, deploying perimeter firewalls and segmentation aligned with trading and compliance requirements.</li>
+            <li>Isolated GCP and on-prem workloads with VyOS and hunted threats using Darktrace with tuned anomaly-detection sensors.</li>
+            <li>Served as primary on-call for NY security and improved SOAR playbooks on Palo Alto to streamline incident response.</li>
+            <li>Onboarded Akeyless for secure machine identity and secrets management using short-lived tokens.</li>
+            <li>Led security build-out for a new Chicago office including access control, cameras, and sensor coverage.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <header class="card-header">
+            <div>
+              <h3>Security Engineer</h3>
+              <p class="card-subtitle">Nordstrom · Seattle, WA</p>
+            </div>
+            <span class="pill">Mar 2020 – Oct 2022</span>
+          </header>
+          <ul class="card-list">
+            <li>Managed and optimized 700+ enterprise and retail firewalls across Palo Alto, Cisco, and Checkpoint.</li>
+            <li>Automated cloud provisioning using Terraform and standardized configurations via Ansible.</li>
+            <li>Migrated store WAN to Versa SD-WAN and improved protection of PCI/PII traffic.</li>
+            <li>Improved Nordstrom.com/NordstromRack.com latency and SEO via CDN and routing optimizations.</li>
+            <li>Mitigated bot traffic with Shape and Fastly VCL tuning and automated data protection workflows with Avamar and StackStorm.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <header class="card-header">
+            <div>
+              <h3>Information Security Analyst Intern</h3>
+              <p class="card-subtitle">GoPro · San Mateo, CA</p>
+            </div>
+            <span class="pill">Sep 2019 – Dec 2019</span>
+          </header>
+          <ul class="card-list">
+            <li>Monitored firewalls, IDS, EDR, and Splunk telemetry for continuous detection and triage.</li>
+            <li>Supported multi-team incident investigations and helped strengthen response workflows.</li>
+            <li>Automated Splunk alerts and deployed honeypots integrated with Splunk to study attacker behavior.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <header class="card-header">
+            <div>
+              <h3>Security Engineer Intern</h3>
+              <p class="card-subtitle">Electronic Arts · Austin, TX</p>
+            </div>
+            <span class="pill">May 2019 – Aug 2019</span>
+          </header>
+          <ul class="card-list">
+            <li>Performed penetration testing on EA game clients and documented vulnerabilities.</li>
+            <li>Built a custom proxy tool to decode proprietary protocols and expose attack paths.</li>
+            <li>Presented findings to leadership at the CTO Intern Tech Fair.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <header class="card-header">
+            <div>
+              <h3>Research Assistant</h3>
+              <p class="card-subtitle">PEC University of Technology · Chandigarh</p>
+            </div>
+            <span class="pill">Jan 2016 – Dec 2017</span>
+          </header>
+          <ul class="card-list">
+            <li>Managed the Wireless Design and Communication Lab and supported research infrastructure.</li>
+            <li>Built GNS3 labs to improve hands-on networking education.</li>
+            <li>Worked on WSN-based greenhouse monitoring and a CAN firewall prototype for embedded security.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Threat Hunting &amp; Detection</h3>
+            <p>Splunk, Suricata, Zeek, Sigma, YARA, Cortex SOAR</p>
+          </div>
+          <div class="skill-group">
+            <h3>Security Engineering</h3>
+            <p>Palo Alto, Checkpoint, Cisco ASA, Zscaler ZIA/ZPA, F5, Fastly, Akamai</p>
+          </div>
+          <div class="skill-group">
+            <h3>Cloud &amp; Infra</h3>
+            <p>AWS (IAM, VPC, Security Hub), GCP, Terraform, Docker, Kubernetes</p>
+          </div>
+          <div class="skill-group">
+            <h3>Programming &amp; Automation</h3>
+            <p>Python, Bash, Regex, YAML, JSON</p>
+          </div>
+          <div class="skill-group">
+            <h3>Network Security</h3>
+            <p>TCP/IP, DNS, HTTP, VPN (GP/AnyConnect), SD-WAN (Versa/Meraki)</p>
+          </div>
+          <div class="skill-group">
+            <h3>Pen Testing &amp; Tools</h3>
+            <p>Burp Suite, Metasploit, Nmap, Nessus, ZAP, Git, Jira, ServiceNow, GNS3, Wireshark</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="card">
+            <header class="card-header">
+              <h3>Secure Social Networking System</h3>
+              <p class="card-subtitle">Python · AES-GCM · TCP Sockets</p>
+            </header>
+            <ul class="card-list">
+              <li>Built an encrypted messaging system with Python, Flask, and AES-256-GCM.</li>
+              <li>Implemented multi-threaded direct/broadcast messaging, secure key distribution, and authenticated framing.</li>
+              <li>Designed a message broker with concurrency management and persistent SQLite logging.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <header class="card-header">
+              <h3>Hybrid Firewall</h3>
+              <p class="card-subtitle">Kernel Module · NFQUEUE · Generic Netlink</p>
+            </header>
+            <ul class="card-list">
+              <li>Developed a hybrid firewall combining a kernel fast path with a Python inspection layer.</li>
+              <li>Implemented Netfilter hooks, dynamic rule tables, and SYN-flood/behavioral logic.</li>
+              <li>Exposed a Generic Netlink interface for real-time rule updates and adaptive mitigation.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <header class="card-header">
+              <h3>Cloud Honeypot Telemetry &amp; Detection Rules</h3>
+              <p class="card-subtitle">GCP · Cowrie · Cloud Run · Python</p>
+            </header>
+            <ul class="card-list">
+              <li>Designed a low-cost honeypot architecture on GCP (Cowrie + Cloud Run traps) to capture real attacker traffic.</li>
+              <li>Centralized telemetry in Cloud Logging and BigQuery, enriching with GeoIP, ASN, AbuseIPDB, and ATT&amp;CK mappings.</li>
+              <li>Built a Python pipeline to generate Suricata, Sigma, and YARA rules and export SOC-ready artifacts via CI.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTS -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <h2>Education &amp; Development</h2>
+        <div class="two-column">
+          <div>
+            <h3>Education</h3>
+            <div class="edu-item">
+              <p class="edu-title">M.S., Electrical Engineering</p>
+              <p class="edu-meta">San Jose State University · Jan 2018 – Dec 2019 · GPA: 3.4</p>
+              <p class="edu-detail">Network Security, Network Programming, Machine Learning, Neural Networks</p>
+            </div>
+            <div class="edu-item">
+              <p class="edu-title">B.Tech, Electrical Engineering</p>
+              <p class="edu-meta">Guru Nanak Dev University · Sep 2011 – Jun 2015</p>
+              <p class="edu-detail">Computer Networks, Data Structures, Algorithms</p>
+            </div>
+          </div>
+          <div>
+            <h3>Professional Development</h3>
+            <ul class="card-list">
+              <li>AWS Security – Specialty (focus on IAM, threat detection, incident response).</li>
+              <li>Google Cybersecurity Professional Certificate.</li>
+              <li>Top 10% ranking on TryHackMe (exploitation, privilege escalation, adversary emulation).</li>
+              <li>On-prem Active Directory security lab for lateral movement and Blue Team detection.</li>
+              <li>Currently pursuing OWASP-focused training in web application security.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          The fastest way to reach me is via email or LinkedIn. I’m open to
+          security engineering, threat hunting, and detection engineering roles.
+        </p>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p><a href="mailto:siddharth.sharma.011235@gmail.com">siddharth.sharma.011235@gmail.com</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/Siddharth--Sharma" target="_blank" rel="noopener">
+              linkedin.com/in/Siddharth--Sharma
+            </a></p>
+          </div>
+          <div class="contact-card">
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/ssiddharthssharma" target="_blank" rel="noopener">
+              github.com/ssiddharthssharma
+            </a></p>
+          </div>
+          <div class="contact-card">
+            <h3>Location</h3>
+            <p>Dehradun, India</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Siddharth Sharma. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hard-coded configuration values for navigation behavior and selectors
+    const NAV_LINK_SELECTOR = '.nav-link';
+    const NAV_TOGGLE_ID = 'nav-toggle';
+    const NAV_MENU_ID = 'nav-menu';
+
+    function initSmoothScroll() {
+      const links = document.querySelectorAll(NAV_LINK_SELECTOR);
+      links.forEach(link => {
+        link.addEventListener('click', event => {
+          const targetId = link.getAttribute('href');
+          if (targetId && targetId.startsWith('#')) {
+            event.preventDefault();
+            const target = document.querySelector(targetId);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth' });
+            }
+            const navMenu = document.getElementById(NAV_MENU_ID);
+            if (navMenu && navMenu.classList.contains('nav-open')) {
+              navMenu.classList.remove('nav-open');
+            }
+          }
+        });
+      });
+    }
+
+    function initMobileNav() {
+      const toggle = document.getElementById(NAV_TOGGLE_ID);
+      const navMenu = document.getElementById(NAV_MENU_ID);
+
+      if (!toggle || !navMenu) return;
+
+      toggle.addEventListener('click', () => {
+        navMenu.classList.toggle('nav-open');
+      });
+    }
+
+    function initYear() {
+      const yearSpan = document.getElementById('year');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    }
+
+    function main() {
+      initSmoothScroll();
+      initMobileNav();
+      initYear();
+    }
+
+    document.addEventListener('DOMContentLoaded', main);
+  </script>
+</body>
 </html>
